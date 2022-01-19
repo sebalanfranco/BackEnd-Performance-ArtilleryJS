@@ -2,7 +2,7 @@
 
 ## Pre-requisites
 
-This project is based on `NodeJS`.
+This project is based on [NodeJS](https://nodejs.org/).
 
 ### Installing NodeJS on your Mac. 
 
