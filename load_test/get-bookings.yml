@@ -1,0 +1,20 @@
+config:
+  target: "https://restful-booker.herokuapp.com"
+  phases:
+    - duration: 6
+      arrivalRate: 2
+      name: Warm up
+    - duration: 30
+      arrivalRate: 5
+      rampTo: 20
+      name: Ramp up load
+    - duration: 120
+      arrivalRate: 20
+      name: Sustained load
+  ensure:
+    p95: 200
+scenarios:
+  - name: "Get bookings"
+    flow:
+      - get:
+          url: "/booking"

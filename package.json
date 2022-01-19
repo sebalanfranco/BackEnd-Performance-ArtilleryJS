@@ -1,0 +1,24 @@
+{
+  "name": "backend-performance-artilleryjs",
+  "version": "1.0.0",
+  "description": "Performance testing framework based on ArtilleryJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "artillery run --output report.json",
+    "report": "artillery report report.json",
+    "postreport": "open report.json.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebalanfranco/BackEnd-Performance-ArtilleryJS.git"
+  },
+  "author": "sebalanfranco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebalanfranco/BackEnd-Performance-ArtilleryJS/issues"
+  },
+  "homepage": "https://github.com/sebalanfranco/BackEnd-Performance-ArtilleryJS#readme",
+  "dependencies": {
+    "artillery": "^2.0.0-10"
+  }
+}
